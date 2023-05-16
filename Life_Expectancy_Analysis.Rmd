@@ -210,7 +210,7 @@ MSE_RF <- sum((resultsRF$`Predicted Value` - resultsRF$`Ground Truth`)^2)/nrow(t
 MSE_RF
 ```
 ```{r}
-#E. Create Predictive Model using Support Vector Regression (SVR)
+#E. Create Predictive Model using Support Vector Regression (SVR) [Alyza]
 library(e1071)
 
 modelSVR <- svm(f, data = train, type = "eps-regression", kernel = "radial")
