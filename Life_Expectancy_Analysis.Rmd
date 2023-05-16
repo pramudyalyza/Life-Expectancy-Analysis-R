@@ -88,12 +88,9 @@ ggplot(corr_melted, aes(x = Var1, y = Var2, fill = value)) + geom_tile() +
 ```
 
 ```{r}
-# Quantiles of a distribution
-# Filter invalid values
+# distribution of life expectancy 
 df_stat <- df_num
-# Calculate the distribution quantiles of the filtered variables
 quantiles <- quantile(df_stat$Life.expectancy, probs = seq(0, 1, 0.25))
-# Show results
 quantiles
 ```
 ```{r}
@@ -110,9 +107,8 @@ pMin
 qnorm(mean = meanLE, sd = sdLE, p = seq(0, 1, 0.1))
 ```
 ```{r}
-# statistical significant and p value
 # t-test for Life Expectancy
-t.test(df_stat$Life.expectancy, mu = 70, alternative = "two.sided")
+t.test(df_stat$Life.expectancy, mu = 69.22493, alternative = "two.sided")
 ```
 
 ```{r}
