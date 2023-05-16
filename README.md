@@ -7,5 +7,5 @@ This repository contains the code and analysis files for exploring the Life Expe
 * Life_Expectancy_Analysis.pdf: A pdf file contains explanation for each line of code in R Markdown and python Notebook
 * About_Dataset.txt: a txt file contains short explanation for each column in the dataset
 
-**Dataset**
+**Dataset**<br>
 The dataset used in this analysis is sourced from Kaggle and can be accessed at the following link: [Life Expectancy - WHO](https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who). Please download the dataset from the provided link before running the code.
